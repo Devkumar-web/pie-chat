@@ -1,103 +1,128 @@
 import Image from "next/image";
+import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div>
+      <Head>
+        <title>PiChat - Connect Instantly</title>
+        <meta name="description" content="PiChat: A modern chat app for seamless communication." />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+      <main className="min-h-screen">
+        {/* Hero Section */}
+        <section className="bg-gradient-to-br from-indigo-100 to-purple-100 py-24 px-6 md:px-24 text-center">
+          <div className="container mx-auto">
+            <h1 className="text-4xl md:text-6xl font-extrabold text-gray-800 mb-6">
+              Instant Connections with PiChat
+            </h1>
+            <p className="text-lg text-gray-700 mb-8">
+              Experience seamless and secure communication. Connect with friends, family, and colleagues instantly.
+            </p>
+            <div className="flex justify-center space-x-4">
+              <Link href="/rooms" className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-indigo-500 hover:to-purple-500 text-white font-semibold py-3 px-6 rounded-full transition duration-300">
+                Start Chatting
+              </Link>
+              <Link href="/features" className="bg-white text-indigo-600 font-semibold py-3 px-6 rounded-full border border-indigo-600 hover:bg-indigo-50 transition duration-300">
+                Learn More
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Features Section */}
+        <section className="py-16 px-6 md:px-24 bg-white">
+          <div className="container mx-auto text-center">
+            <h2 className="text-3xl font-semibold text-gray-800 mb-8">Key Features</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Real-time Messaging</h3>
+                <p className="text-gray-700">Instantly send and receive messages.</p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Secure Communication</h3>
+                <p className="text-gray-700">End-to-end encryption for your privacy.</p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Group Chats</h3>
+                <p className="text-gray-700">Connect with multiple people at once.</p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-2">File Sharing</h3>
+                <p className="text-gray-700">Share documents, images, and more.</p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Voice and Video Calls</h3>
+                <p className="text-gray-700">Enjoy crystal-clear voice and video calls.</p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Customizable Notifications</h3>
+                <p className="text-gray-700">Tailor notifications to your preferences.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Pricing Section */}
+        <section className="py-16 px-6 md:px-24 bg-gray-100">
+          <div className="container mx-auto text-center">
+            <h2 className="text-3xl font-semibold text-gray-800 mb-8">Pricing Plans</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Basic Plan */}
+              <div className="bg-white rounded-lg shadow-md p-6">
+                <h3 className="text-2xl font-semibold mb-4">Basic</h3>
+                <p className="text-gray-700 mb-4">Free</p>
+                <ul className="list-disc list-inside text-gray-700 mb-6">
+                  <li>Unlimited text messaging</li>
+                  <li>Group chats</li>
+                </ul>
+                <Link href="/signup" className="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-2 px-4 rounded-full transition duration-300">
+                  Sign Up
+                </Link>
+              </div>
+
+              {/* Pro Plan */}
+              <div className="bg-white rounded-lg shadow-md p-6">
+                <h3 className="text-2xl font-semibold mb-4">Pro</h3>
+                <p className="text-gray-600 mb-4">$9.99/month</p>
+                <ul className="list-disc list-inside text-gray-600 mb-6">
+                  <li>All Basic features</li>
+                  <li>Voice and video calls</li>
+                  <li>File sharing</li>
+                  <li>Priority support</li>
+                </ul>
+                <Link href="/signup" className="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-2 px-4 rounded-full transition duration-300">
+                  Get Started
+                </Link>
+              </div>
+
+              {/* Enterprise Plan */}
+              <div className="bg-white rounded-lg shadow-md p-6">
+                <h3 className="text-2xl font-semibold mb-4">Enterprise</h3>
+                <p className="text-gray-600 mb-4">Contact Us</p>
+                <ul className="list-disc list-inside text-gray-600 mb-6">
+                  <li>All Pro features</li>
+                  <li>Custom integrations</li>
+                  <li>Dedicated support</li>
+                  <li>Advanced analytics</li>
+                </ul>
+                <Link href="/contact" className="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-2 px-4 rounded-full transition duration-300">
+                  Contact Us
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
+
+export const metadata = {
+  title: 'Home - Piechat',
+  description: 'Piechat is a chat application that allows you to chat with your friends and family.',
+}
+
+
