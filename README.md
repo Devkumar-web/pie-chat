@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Pie-Chat
 
-## Getting Started
+Pie-Chat is a real-time chat application built using **Next.js** and **Tailwind CSS**. Authentication is managed by **Clerk**, and real-time messaging is powered by **GetStream**.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- 🔒 **Authentication:** Secure user authentication via Clerk.
+- 💬 **Real-Time Messaging:** Powered by GetStream for instant chat updates.
+- 🎨 **Modern UI:** Styled using Tailwind CSS for a sleek and responsive design.
+- ⚡ **Optimized Performance:** Built with Next.js for fast and seamless interactions.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Frontend:** Next.js, Tailwind CSS
+- **Authentication:** Clerk
+- **Real-Time Chat:** GetStream API
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Demo
 
-## Learn More
+### Screenshots
 
-To learn more about Next.js, take a look at the following resources:
+Here are some previews of Pie-Chat:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Screenshot 1](Demo/Screenshot_1.png)
+![Screenshot 2](Demo/Screenshot_2.png)
+![Screenshot 3](Demo/Screenshot_3.png)
+![Screenshot 4](Demo/Screenshot_4.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Video Demo
 
-## Deploy on Vercel
+[![Watch the Demo](Demo/demo.mp4)](Demo/demo.mp4)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Installation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Follow these steps to run the project locally:
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/pie-chat.git
+   cd pie-chat
+   ```
+
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+
+3. Set up environment variables in a `.env.local` file:
+   ```sh
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_key
+   NEXT_PUBLIC_STREAM_API_KEY=your_stream_key
+   ```
+
+4. Run the development server:
+   ```sh
+   npm run dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000) to view the app.
+
+## Contributing
+
+Feel free to open issues or submit pull requests to improve Pie-Chat!
+
+## License
+
+This project is licensed under the MIT License.
