@@ -25,10 +25,13 @@ Here are some previews of Pie-Chat:
 ![Screenshot 2](Demo/Screenshot_2.png)
 ![Screenshot 3](Demo/Screenshot_3.png)
 ![Screenshot 4](Demo/Screenshot_4.png)
+![Screenshot 5](Demo/Screenshot_5.png)
+![Screenshot 6](Demo/Screenshot_6.png)
+
 
 ### Video Demo
 
-[![Watch the Demo](Demo/demo.mp4)](Demo/demo.mp4)
+[![Watch the Demo](Demo/Demo.mp4)](Demo/Demo.mp4)
 
 ## Installation
 
