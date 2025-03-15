@@ -21,7 +21,7 @@ Pie-Chat is a real-time chat application built using **Next.js** and **Tailwind 
 
 Here are some previews of Pie-Chat:
 
-![Screenshot 1](<img src="Demo/Screenshot 2025-03-15 142743.png" />)
+![Screenshot 1](<img src="/Demo/Screenshot 2025-03-15 142743.png" />)
 ![Screenshot 2](Demo/Screenshot_2.png)
 ![Screenshot 3](Demo/Screenshot_3.png)
 ![Screenshot 4](Demo/Screenshot_4.png)
