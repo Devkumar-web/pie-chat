@@ -1,21 +1,22 @@
-# Pie-Chat
+# Pie-Chat📜
+💬
 
 Pie-Chat is a real-time chat application built using **Next.js** and **Tailwind CSS**. Authentication is managed by **Clerk**, and real-time messaging is powered by **GetStream**.
 
-## Features
+## Features📌
 
 - 🔒 **Authentication:** Secure user authentication via Clerk.
 - 💬 **Real-Time Messaging:** Powered by GetStream for instant chat updates.
 - 🎨 **Modern UI:** Styled using Tailwind CSS for a sleek and responsive design.
 - ⚡ **Optimized Performance:** Built with Next.js for fast and seamless interactions.
 
-## Tech Stack
+## Tech Stack🤖
 
 - **Frontend:** Next.js, Tailwind CSS
 - **Authentication:** Clerk
 - **Real-Time Chat:** GetStream API
 
-## Demo
+## Demo💻
 
 ### Screenshots
 
@@ -28,20 +29,13 @@ Here are some previews of Pie-Chat:
 ![Screenshot 5](/Demo/Screenshot%202025-03-15%20143656.png)
 ![Screenshot 6](/Demo/Screenshot%202025-03-15%20143720.png)
 
-
-### Video Demo
-
-https://user-images.githubusercontent.com/DevKumar-web/demo.mp4
-
-> **Note**: The video is muted.
-
-## Installation
+## Installation ❗
 
 Follow these steps to run the project locally:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/pie-chat.git
+   git clone https://github.com/DevKumar-web/pie-chat.git
    cd pie-chat
    ```
 
@@ -63,7 +57,7 @@ Follow these steps to run the project locally:
 
 5. Open [http://localhost:3000](http://localhost:3000) to view the app.
 
-## Contributing
+## Contributing  ⭐⭐⭐⭐⭐
 
 Feel free to open issues or submit pull requests to improve Pie-Chat!
 
